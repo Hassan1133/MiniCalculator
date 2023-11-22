@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondScreen">
+
+    <EditText
+        android:id="@+id/operandOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter first operand"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="80dp"
+        android:inputType="numberDecimal"
+        />
+
+    <EditText
+        android:id="@+id/operandTwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter second operand"
+        android:inputType="numberDecimal"
+        android:layout_below="@+id/operandOne"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="50dp"
+        />
+
+    <Button
+        android:id="@+id/plusBtn"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:textSize="25sp"
+        android:layout_below="@id/operandTwo"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="90dp"
+        />
+    <Button
+        android:id="@+id/minusBtn"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:textSize="25sp"
+        android:layout_below="@id/operandTwo"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="200dp"
+        />
+    <Button
+        android:id="@+id/divideBtn"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="/"
+        android:textSize="25sp"
+        android:layout_below="@id/plusBtn"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="90dp"
+        />
+    <Button
+        android:id="@+id/multiplyBtn"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="x"
+        android:textSize="25sp"
+        android:layout_below="@id/minusBtn"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="200dp"
+        />
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/divideBtn"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="40dp"
+        android:padding="10dp"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        />
+
+</RelativeLayout>
